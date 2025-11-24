@@ -1,0 +1,6 @@
+<ul class="product-list">
+  <li *ngFor="let item of listaProductos; let i = index">
+    <span>Nombre: {{ item.nombre }} — Precio: ${{ item.precio }}</span>
+    <button (click)="eliminarProductos(i)">x</button>
+  </li>
+</ul>

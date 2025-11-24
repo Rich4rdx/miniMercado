@@ -1,0 +1,40 @@
+.product-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  li {
+    list-style: none;
+    padding: 14px;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    button {
+      background: #ff4d4d;
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: .2s ease;
+
+      &:hover {
+        background: #d93636;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
