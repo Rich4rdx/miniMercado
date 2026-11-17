@@ -1,27 +1,28 @@
-# MiniCatalogo
+# 🛒 Mini Catálogo de Productos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Aplicación en Angular para agregar productos con nombre y precio y verlos en un listado. Es una práctica de **comunicación entre componentes**.
 
-## Development server
+![Angular](https://img.shields.io/badge/Angular_16-DD0031?style=flat&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Qué practiqué
 
-## Code scaffolding
+- Dividir la interfaz en componentes: formulario (`product-form`) y listado (`product-list`)
+- Enviar datos del hijo al padre con `@Output` y `EventEmitter`
+- Pasar datos del padre al hijo con `@Input`
+- Enlace bidireccional en formularios con `ngModel`
+- Validación básica: el nombre no puede estar vacío y el precio debe ser mayor que 0
+- Renderizado de listas con `*ngFor`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Cómo ejecutarlo
 
-## Build
+```bash
+npm install
+ng serve
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Abre http://localhost:4200
 
-## Running unit tests
+## Autor
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Richard**: [github.com/Rich4rdx](https://github.com/Rich4rdx)
